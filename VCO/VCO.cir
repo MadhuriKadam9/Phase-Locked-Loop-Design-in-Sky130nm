@@ -1,0 +1,15 @@
+* D:\soc\VCO\VCO.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/05/22 20:39:15
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Net-_X1-Pad1_ Net-_X1-Pad2_ ? fout GND avsdvco_1v8		
+v1  Net-_X1-Pad1_ GND DC		
+v2  Net-_X1-Pad2_ GND DC		
+U1  fout plot_v1		
+scmode1  SKY130mode		
+
+.end

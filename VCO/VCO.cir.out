@@ -1,0 +1,25 @@
+* d:\soc\vco\vco.cir
+
+.include avsdvco_1v8.sub
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+x1 net-_x1-pad1_ net-_x1-pad2_ ? fout gnd avsdvco_1v8
+v1 net-_x1-pad1_ gnd  dc 1.8
+v2 net-_x1-pad2_ gnd  dc 0.7
+* u1  fout plot_v1
+* s c m o d e
+.tran 1e-12 10e-09 0e-06
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(fout)
+.endc
+.end
