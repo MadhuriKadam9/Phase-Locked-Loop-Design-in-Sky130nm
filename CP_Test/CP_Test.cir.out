@@ -1,0 +1,30 @@
+* d:\soc\cp_test\cp_test.cir
+
+.include Charge_Pump.sub
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+x1 vdd up down cp Charge_Pump
+v3 vdd gnd  dc 1.8
+v1  up gnd pulse(0 0 0 0 0 0 0)
+v2  down gnd pulse(0 1.8 0 0 0 0.01u 0.2u)
+* u1  up plot_v1
+* u2  down plot_v1
+* u3  cp plot_v1
+* s c m o d e
+.tran 0.01e-06 4e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(up)
+plot v(down)
+plot v(cp)
+.endc
+.end

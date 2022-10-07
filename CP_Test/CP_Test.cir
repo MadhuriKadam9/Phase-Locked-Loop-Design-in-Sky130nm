@@ -1,0 +1,18 @@
+* D:\soc\CP_Test\CP_Test.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/04/22 11:58:26
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+X1  Vdd UP Down CP Charge_Pump		
+v3  Vdd GND DC		
+v1  UP GND pulse		
+v2  Down GND pulse		
+U1  UP plot_v1		
+U2  Down plot_v1		
+U3  CP plot_v1		
+scmode1  SKY130mode		
+
+.end
