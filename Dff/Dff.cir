@@ -1,0 +1,27 @@
+* D:\soc\Dff\Dff.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/07/22 21:05:35
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U5  vdd B A Net-_U1-Pad1_ Net-_U5-Pad5_ Net-_U1-Pad3_ adc_bridge_3		
+U6  Net-_U1-Pad4_ QA dac_bridge_1		
+v1  vdd GND DC		
+v3  A GND pulse		
+U7  QA plot_v1		
+U2  vdd plot_v1		
+U3  A plot_v1		
+U9  Net-_U10-Pad1_ Net-_U1-Pad4_ Net-_U1-Pad2_ d_and		
+U10  Net-_U10-Pad1_ QB dac_bridge_1		
+U11  QB plot_v1		
+U13  Net-_U1-Pad2_ Rstn dac_bridge_1		
+U12  Rstn plot_v1		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ dff		
+U8  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U5-Pad5_ Net-_U10-Pad1_ dff		
+scmode1  SKY130mode		
+v2  B GND pulse		
+U4  B plot_v1		
+
+.end

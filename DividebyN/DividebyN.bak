@@ -1,0 +1,228 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:DividebyN-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pulse v1
+U 1 1 633E959B
+P 1000 3500
+F 0 "v1" H 800 3600 60  0000 C CNN
+F 1 "pulse" H 800 3450 60  0000 C CNN
+F 2 "R1" H 700 3500 60  0000 C CNN
+F 3 "" H 1000 3500 60  0000 C CNN
+	1    1000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 633E95E6
+P 1000 4150
+F 0 "#PWR1" H 1000 3900 50  0001 C CNN
+F 1 "GND" H 1000 4000 50  0000 C CNN
+F 2 "" H 1000 4150 50  0001 C CNN
+F 3 "" H 1000 4150 50  0001 C CNN
+	1    1000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3050 1000 2950
+Wire Wire Line
+	800  2950 1450 2950
+Wire Wire Line
+	1000 3950 1000 4150
+Wire Wire Line
+	2600 2950 3150 2950
+Text GLabel 800  2950 0    60   Input ~ 0
+clk
+$Comp
+L plot_v1 U1
+U 1 1 633E96A1
+P 1200 2850
+F 0 "U1" H 1200 3350 60  0000 C CNN
+F 1 "plot_v1" H 1400 3200 60  0000 C CNN
+F 2 "" H 1200 2850 60  0000 C CNN
+F 3 "" H 1200 2850 60  0000 C CNN
+	1    1200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U5
+U 1 1 633E96EF
+P 6150 2800
+F 0 "U5" H 6150 3300 60  0000 C CNN
+F 1 "plot_v1" H 6350 3150 60  0000 C CNN
+F 2 "" H 6150 2800 60  0000 C CNN
+F 3 "" H 6150 2800 60  0000 C CNN
+	1    6150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2650 1200 2950
+Connection ~ 1200 2950
+Connection ~ 1000 2950
+$Comp
+L adc_bridge_2 U6
+U 1 1 633EFCE1
+P 2050 3000
+F 0 "U6" H 2050 3000 60  0000 C CNN
+F 1 "adc_bridge_2" H 2050 3150 60  0000 C CNN
+F 2 "" H 2050 3000 60  0000 C CNN
+F 3 "" H 2050 3000 60  0000 C CNN
+	1    2050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v2
+U 1 1 633EFD38
+P 1300 3650
+F 0 "v2" H 1100 3750 60  0000 C CNN
+F 1 "pulse" H 1100 3600 60  0000 C CNN
+F 2 "R1" H 1000 3650 60  0000 C CNN
+F 3 "" H 1300 3650 60  0000 C CNN
+	1    1300 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  3150 0    60   Input ~ 0
+rstn
+Wire Wire Line
+	800  3150 900  3150
+Wire Wire Line
+	900  3150 900  3050
+Wire Wire Line
+	900  3050 1450 3050
+Wire Wire Line
+	1300 3200 1300 3050
+Connection ~ 1300 3050
+Wire Wire Line
+	1300 4100 1000 4100
+Connection ~ 1000 4100
+Wire Wire Line
+	2600 3050 3150 3050
+$Comp
+L plot_v1 U2
+U 1 1 633EFE24
+P 1350 3050
+F 0 "U2" H 1350 3550 60  0000 C CNN
+F 1 "plot_v1" H 1550 3400 60  0000 C CNN
+F 2 "" H 1350 3050 60  0000 C CNN
+F 3 "" H 1350 3050 60  0000 C CNN
+	1    1350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2850 1350 3050
+Connection ~ 1350 3050
+$Comp
+L dac_bridge_4 U4
+U 1 1 633F007D
+P 5300 3150
+F 0 "U4" H 5300 3150 60  0000 C CNN
+F 1 "dac_bridge_4" H 5300 3450 60  0000 C CNN
+F 2 "" H 5300 3150 60  0000 C CNN
+F 3 "" H 5300 3150 60  0000 C CNN
+	1    5300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2950 4550 2950
+Wire Wire Line
+	4750 3050 4550 3050
+Wire Wire Line
+	4750 3150 4550 3150
+Wire Wire Line
+	4750 3250 4550 3250
+Text GLabel 6350 2800 2    60   Input ~ 0
+out3
+Text GLabel 6350 2950 2    60   Input ~ 0
+out2
+Text GLabel 6350 3100 2    60   Input ~ 0
+out1
+Text GLabel 6350 3250 2    60   Input ~ 0
+out0
+Wire Wire Line
+	6350 2800 6000 2800
+Wire Wire Line
+	6000 2800 6000 2950
+Wire Wire Line
+	6000 2950 5850 2950
+Wire Wire Line
+	6350 2950 6100 2950
+Wire Wire Line
+	6100 2950 6100 3050
+Wire Wire Line
+	6100 3050 5850 3050
+Wire Wire Line
+	6350 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3150
+Wire Wire Line
+	6150 3150 5850 3150
+Wire Wire Line
+	6350 3250 5850 3250
+Wire Wire Line
+	6150 2600 6150 2800
+Connection ~ 6150 2800
+$Comp
+L freq_divideby_8nw U3
+U 1 1 633FDC43
+P 1000 4850
+F 0 "U3" H 3850 6650 60  0000 C CNN
+F 1 "freq_divideby_8nw" H 3850 6850 60  0000 C CNN
+F 2 "" H 3850 6800 60  0000 C CNN
+F 3 "" H 3850 6800 60  0000 C CNN
+	1    1000 4850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

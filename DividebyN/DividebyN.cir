@@ -1,0 +1,21 @@
+* D:\soc\DividebyN\DividebyN.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/07/22 14:18:48
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  clk GND pulse		
+U1  clk plot_v1		
+U5  out3 plot_v1		
+U6  clk rstn Net-_U3-Pad1_ Net-_U3-Pad2_ adc_bridge_2		
+v2  rstn GND pulse		
+U2  rstn plot_v1		
+U4  Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ out3 out2 out1 out0 dac_bridge_4		
+U3  Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U3-Pad3_ Net-_U3-Pad4_ Net-_U3-Pad5_ Net-_U3-Pad6_ freq_divideby_8nw		
+U7  out2 plot_v1		
+U8  out1 plot_v1		
+U9  out0 plot_v1		
+
+.end
