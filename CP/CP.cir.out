@@ -1,0 +1,44 @@
+* d:\soc\cp\cp.cir
+
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+xsc2 net-_sc1-pad1_ up gnd gnd sky130_fd_pr__nfet_01v8 l=1 w=1
+xsc1 net-_sc1-pad1_ up vdd vdd sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc4 net-_sc3-pad1_ down gnd gnd sky130_fd_pr__nfet_01v8  l=1 w=1
+xsc3 net-_sc3-pad1_ down vdd vdd sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc7 net-_sc1-pad1_ vdd net-_sc13-pad2_ net-_sc13-pad2_ sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc8 net-_sc1-pad1_ gnd net-_sc13-pad2_ net-_sc13-pad2_ sky130_fd_pr__nfet_01v8  l=1 w=1
+xsc5 net-_sc3-pad1_ vdd net-_sc10-pad2_ net-_sc10-pad2_ sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc6 net-_sc3-pad1_ gnd net-_sc10-pad2_ net-_sc10-pad2_ sky130_fd_pr__nfet_01v8  l=1 w=1
+xsc9 net-_sc13-pad1_ up net-_sc13-pad1_ net-_sc13-pad1_ sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc11 gnd gnd vdd vdd sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc13 net-_sc13-pad1_ net-_sc13-pad2_ vdd vdd sky130_fd_pr__pfet_01v8  l=0.25 w=65
+xsc14 cp gnd net-_sc13-pad1_ net-_sc13-pad1_ sky130_fd_pr__pfet_01v8  l=1 w=3
+xsc10 net-_sc10-pad1_ net-_sc10-pad2_ net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__nfet_01v8  l=1 w=1
+xsc12 vdd vdd gnd gnd sky130_fd_pr__nfet_01v8  l=1 w=1
+xsc16 net-_sc10-pad1_ down gnd gnd sky130_fd_pr__nfet_01v8  l=0.25 w=21
+xsc15 cp vdd net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__nfet_01v8  l=1 w=1
+v1 vdd gnd  dc 1.8
+v2  up gnd pulse(0 0 0 0 0 0 0)
+v3  down gnd pulse(0 1.8 0 0 0 0.01u 0.2u)
+* u1  up plot_v1
+* u2  down plot_v1
+* u3  cp plot_v1
+* s c m o d e
+.tran 0.01e-06 4e-06 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(up)
+plot v(down)
+plot v(cp)
+.endc
+.end

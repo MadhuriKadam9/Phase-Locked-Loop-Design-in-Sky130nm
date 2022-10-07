@@ -1,0 +1,33 @@
+* D:\soc\CP\CP.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/02/22 21:47:36
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC2  Net-_SC1-Pad1_ UP GND GND sky130_fd_pr__nfet_01v8		
+SC1  Net-_SC1-Pad1_ UP VDD VDD sky130_fd_pr__pfet_01v8		
+SC4  Net-_SC3-Pad1_ DOWN GND GND sky130_fd_pr__nfet_01v8		
+SC3  Net-_SC3-Pad1_ DOWN VDD VDD sky130_fd_pr__pfet_01v8		
+SC7  Net-_SC1-Pad1_ VDD Net-_SC13-Pad2_ Net-_SC13-Pad2_ sky130_fd_pr__pfet_01v8		
+SC8  Net-_SC1-Pad1_ GND Net-_SC13-Pad2_ Net-_SC13-Pad2_ sky130_fd_pr__nfet_01v8		
+SC5  Net-_SC3-Pad1_ VDD Net-_SC10-Pad2_ Net-_SC10-Pad2_ sky130_fd_pr__pfet_01v8		
+SC6  Net-_SC3-Pad1_ GND Net-_SC10-Pad2_ Net-_SC10-Pad2_ sky130_fd_pr__nfet_01v8		
+SC9  Net-_SC13-Pad1_ UP Net-_SC13-Pad1_ Net-_SC13-Pad1_ sky130_fd_pr__pfet_01v8		
+SC11  GND GND VDD VDD sky130_fd_pr__pfet_01v8		
+SC13  Net-_SC13-Pad1_ Net-_SC13-Pad2_ VDD VDD sky130_fd_pr__pfet_01v8		
+SC14  CP GND Net-_SC13-Pad1_ Net-_SC13-Pad1_ sky130_fd_pr__pfet_01v8		
+SC10  Net-_SC10-Pad1_ Net-_SC10-Pad2_ Net-_SC10-Pad1_ Net-_SC10-Pad1_ sky130_fd_pr__nfet_01v8		
+SC12  VDD VDD GND GND sky130_fd_pr__nfet_01v8		
+SC16  Net-_SC10-Pad1_ DOWN GND GND sky130_fd_pr__nfet_01v8		
+SC15  CP VDD Net-_SC10-Pad1_ Net-_SC10-Pad1_ sky130_fd_pr__nfet_01v8		
+v1  VDD GND DC		
+v2  UP GND pulse		
+v3  DOWN GND pulse		
+U1  UP plot_v1		
+U2  DOWN plot_v1		
+U3  CP plot_v1		
+scmode1  SKY130mode		
+
+.end
