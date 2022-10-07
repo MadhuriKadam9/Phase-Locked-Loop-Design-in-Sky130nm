@@ -1,0 +1,31 @@
+* c:\fossee\esim\library\subcircuitlibrary\charge_pump\charge_pump.cir
+
+.include ""
+.lib "" 
+xsc2 net-_sc1-pad1_ /up gnd gnd sky130_fd_pr__nfet_01v8 
+xsc1 net-_sc1-pad1_ /up /vdd /vdd sky130_fd_pr__pfet_01v8 
+xsc4 net-_sc3-pad1_ /down gnd gnd sky130_fd_pr__nfet_01v8 
+xsc3 net-_sc3-pad1_ /down /vdd /vdd sky130_fd_pr__pfet_01v8 
+xsc7 net-_sc1-pad1_ /vdd net-_sc13-pad2_ net-_sc13-pad2_ sky130_fd_pr__pfet_01v8 
+xsc8 net-_sc1-pad1_ gnd net-_sc13-pad2_ net-_sc13-pad2_ sky130_fd_pr__nfet_01v8 
+xsc5 net-_sc3-pad1_ /vdd net-_sc10-pad2_ net-_sc10-pad2_ sky130_fd_pr__pfet_01v8 
+xsc6 net-_sc3-pad1_ gnd net-_sc10-pad2_ net-_sc10-pad2_ sky130_fd_pr__nfet_01v8 
+xsc9 net-_sc13-pad1_ /up net-_sc13-pad1_ net-_sc13-pad1_ sky130_fd_pr__pfet_01v8 
+xsc11 gnd gnd /vdd /vdd sky130_fd_pr__pfet_01v8 
+xsc13 net-_sc13-pad1_ net-_sc13-pad2_ /vdd /vdd sky130_fd_pr__pfet_01v8 
+xsc14 /cp gnd net-_sc13-pad1_ net-_sc13-pad1_ sky130_fd_pr__pfet_01v8 
+xsc10 net-_sc10-pad1_ net-_sc10-pad2_ net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__nfet_01v8 
+xsc12 /vdd /vdd gnd gnd sky130_fd_pr__nfet_01v8 
+xsc16 net-_sc10-pad1_ /down gnd gnd sky130_fd_pr__nfet_01v8 
+xsc15 /cp /vdd net-_sc10-pad1_ net-_sc10-pad1_ sky130_fd_pr__nfet_01v8 
+* s c m o d e
+* u1  /vdd /up /down /cp port
+.tran 0e-00 0e-00 0e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+.endc
+.end
