@@ -82,3 +82,24 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 
 ### Final PLL Circuit Waveforms
 <img width="959" alt="pll-end" src="https://user-images.githubusercontent.com/88900482/194718580-f6822079-97dc-4537-aac3-f0040ebd3da0.PNG">
+
+
+# Future Scope
+PLL Design can be further optimised to reduce the acquisition time.  
+
+# Authoured By <br/>
+Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai <br/>
+Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
+
+# Acknowledgements <br/>
+[1. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](https://esim.fossee.in/mixed-signal-design-marathon/)<br/>
+[2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
+[3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
+[4. Mr. Sumanto Kar,PS, FOSSEE IITB](https://fossee.in/)<br/>
+[5. Ms. A. Devipriya](https://github.com/Devipriya1921/vsdserializer_v1/)<br/>
+
+# References <br/>
+[1]  Sreedhar Vineel R. Kaipu, Kriti Vaish, Sneha Komatireddy, Akshat Sood, Manish Goswami, “Design of a Low Power Wide Range Phase Locked Loop using 180nm CMOS Technology  ,” IEEE Conference Proc., July 2016.
+[2]   Behzad Razavi, “Design of Analog CMOS Integrated circuits” Mc Graw Hil Education, 2ed edition.
+[3]   Paras Gidd, Git-hub Repo,“https://github.com/parasgidd/avsdpll_3v3
+[4]   Nalinkumar,Git-hub Repo, "https://github.com/Nalinkumar2002/avsdvco_1v8"
