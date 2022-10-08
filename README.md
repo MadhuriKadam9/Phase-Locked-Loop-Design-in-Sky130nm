@@ -92,7 +92,7 @@ Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai 
 Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # Acknowledgements <br/>
-[1. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](http://iitb.ac.in/)<br/>
+[1. Prof. Kannan Moudgalya, PI, Mixed Signal SoC design Marathon using eSim & SKY130](http://iitb.ac.in/)<br/>
 [2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)<br/>
 [3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
 [4. Google](https://www.google.co.in/)<br/>
