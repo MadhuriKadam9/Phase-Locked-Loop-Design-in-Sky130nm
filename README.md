@@ -4,7 +4,7 @@ This repository presents the design of Phase Locked Loop with charge pump. It is
 # Table Of Content <br/>
 * [Abstract](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#abstract-)<br/>
 * [PLL Block Diagram](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#pll-block-diagram)<br/>
-* [Tool used](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#tool-used)<br/>
+* [EDA Tool and PDK used](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#eda-tool-and-pdk-used)<br/>
 * [PLL Block Diagram with Circuit Diagram and Simulation waveforms in eSim Tool](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#pll-block-diagram-with-circuit-diagram-and-simulation-waveforms-in-eSim-tool)<br/>
 * [Future Scope](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#future-scope)<br/>
 * [Authoured By](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#authoured-by)<br/>
@@ -22,7 +22,7 @@ circuit will be redesigned and simulated with Sky130 nm process node using eSim 
 
 Phase Locked Loop Block diagram is shown above. It consists of 1st input digital block i.e. Phase frequency detector which will compare reference i.e input frequency and phase with output frequency and phase and provides two output signals named V(up) and V(down). If Vin has frequency more than Vout or if Vin is leading Vout then V(up) continues to produce pulses whose width is proportional to Øin – Øout and V(down) doesn’t. Similarly if Vout is leading Vin or It has more frequency than Vin then V(down) continues to generate pulses while V(up) remains at 0. These V(up) and V(down) signals are then used to activate charge pump to pump proportional current Io in Cp capacitor to produce control voltage Vctrl.  As this Vctrl will have both AC and DC components, It is then passed through the Low pass filter to give DC Vctrl voltage. This control voltage is then applied as an input voltage to VCO i.e. Voltage controlled Oscillator. VCO produces a frequency which is proportional to Vctrl voltage. As VCO produces a frequency i.e. N times input frequency fout = N*fin, It is then passed through divide by N network to get fout/N which is then fed back to PFD where it compares it with reference input frequency fin.
 
-# Tool used <br/>
+# EDA Tool and PDK used <br/>
 eSim 2.3 Open Source EDA Tool is used here. It is capable of doing Mixed mode simulation with the help of Makerchip and Ngveri tab also It is now integrated with Google's Skywater 130nm opensource PDKs.    <br/>
 
 <img width="959" alt="eSim" src="https://user-images.githubusercontent.com/88900482/194701917-286d8032-58bc-48a6-8f7f-12d90a20ddb9.PNG">
@@ -33,6 +33,11 @@ eSim 2.3 Open Source EDA Tool is used here. It is capable of doing Mixed mode si
 ## Phase Frequency Detector (PFD) Digital Block Implementation and Simulation
 PFD is Digital Block which is implemented using two D flip flops and one AND gate to produce QA (UP) and QB (DOWN) Signals based on the Phase and Frequency shift between Va and Vb signals. These UP and Down signals are then given to Charge Pump Block.
 ### PFD Circuit Diagram
+#### D Flip Flop Model and Simulation in Makerchip
+<img width="168" alt="D-ff" src="https://user-images.githubusercontent.com/88900482/194722484-16364767-4d0e-41b0-9cf0-b7a574bf1ace.PNG">
+
+<img width="960" alt="d-ff-op" src="https://user-images.githubusercontent.com/88900482/194722500-1981c39a-598b-4004-bce9-3943dd9ae84e.PNG">
+
 <img width="742" alt="pfd-sch" src="https://user-images.githubusercontent.com/88900482/194702613-8df3aaa7-60a0-44ae-a362-a75e6aff29c5.PNG">
 
 ### PFD Waveform
@@ -70,6 +75,11 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 <img width="949" alt="vco_0 9" src="https://user-images.githubusercontent.com/88900482/194718241-c35f9b4c-3161-4a8a-8fad-23568acc64d6.PNG">
 
 ## Frequency Divide By 8 Digital Block Implementation and Simulation
+### Frequency Divide By 8 Model Creation and Simulation in Makerchip
+<img width="959" alt="counter4bit" src="https://user-images.githubusercontent.com/88900482/194722649-b2b92c1a-3e50-4872-ac14-76c2edfcb8fb.PNG">
+
+<img width="341" alt="Freq-8-model" src="https://user-images.githubusercontent.com/88900482/194722668-c34c9266-e7b2-40d1-9782-f8d89b32f906.PNG">
+
 ### Frequency Divide By 8 Ckt Diagram
 <img width="835" alt="divideby8-ckt" src="https://user-images.githubusercontent.com/88900482/194718381-978a0647-c634-4f0b-a09d-0c7e187ff6d7.PNG">
 
@@ -104,6 +114,9 @@ Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # References <br/>
 [1]  Sreedhar Vineel R. Kaipu, Kriti Vaish, Sneha Komatireddy, Akshat Sood, Manish Goswami, “Design of a Low Power Wide Range Phase Locked Loop using 180nm CMOS Technology  ,” IEEE Conference Proc., July 2016.
+
 [2]   Behzad Razavi, “Design of Analog CMOS Integrated circuits” Mc Graw Hil Education, 2ed edition.
+
 [3]   Paras Gidd, Git-hub Repo,“https://github.com/parasgidd/avsdpll_3v3
+
 [4]   Nalinkumar,Git-hub Repo, "https://github.com/Nalinkumar2002/avsdvco_1v8"
