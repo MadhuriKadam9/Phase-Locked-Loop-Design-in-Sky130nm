@@ -31,6 +31,13 @@ eSim 2.3 Open Source EDA Tool is used here. It is capable of doing Mixed mode si
 <img width="687" alt="PLL-schma" src="https://user-images.githubusercontent.com/88900482/194702432-77a7b1e5-0643-4868-bbfa-fe62bc4d2cc6.PNG">
 
 ## Phase Frequency Detector (PFD) Digital Block Implementation and Simulation
+PFD is Digital Block which is implemented using two D flip flops and one AND gate to produce QA (UP) and QB (DOWN) Signals based on the Phase and Frequency shift between Va and Vb signals. These UP and Down signals are then given to Charge Pump Block.
+### PFD Circuit Diagram
 <img width="742" alt="pfd-sch" src="https://user-images.githubusercontent.com/88900482/194702613-8df3aaa7-60a0-44ae-a362-a75e6aff29c5.PNG">
 
-PFD is Digital Block which is implemented using two D flip flops and one AND gate
+### PFD Waveform
+
+
+
+
+
