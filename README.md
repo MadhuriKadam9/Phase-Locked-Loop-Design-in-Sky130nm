@@ -45,5 +45,40 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 #### Case 3) Va and Vb in Phase
 <img width="945" alt="PFD-mid" src="https://user-images.githubusercontent.com/88900482/194714971-97b2b4d9-be9f-4f58-b73e-49ea25ab5bc2.PNG">
 
+## Charge Pump (CP) with Low Pass Filter (LPF) Analog Block Implementation and Simulation
+### CP Circuit Diagram
+<img width="521" alt="CP-sch" src="https://user-images.githubusercontent.com/88900482/194717804-47711f3c-3b69-44db-9030-cf7ca81f5afb.PNG">
 
+### CP Symbol and Test Ckt
+<img width="361" alt="cp-symbol" src="https://user-images.githubusercontent.com/88900482/194717840-3c12e014-ff87-4cb3-bb2f-1d280e381ffd.PNG">
+<img width="494" alt="CP-Test" src="https://user-images.githubusercontent.com/88900482/194718027-3a4591c0-f1ae-4828-9e13-33be05ed9d59.PNG">
 
+### CP Waveform
+<img width="955" alt="PFD_CP" src="https://user-images.githubusercontent.com/88900482/194717989-e88c9b40-a96d-4d51-a718-7afb3e44ee20.PNG">
+
+### Charge Pump with LPF Ckt
+<img width="311" alt="CP-lpf-ckt" src="https://user-images.githubusercontent.com/88900482/194718129-36c19527-5ba8-4ad3-acc1-d11492b85c44.PNG">
+
+### Charge Pump with LPF Ckt Waveform
+<img width="958" alt="cp-lpf-proper" src="https://user-images.githubusercontent.com/88900482/194718140-cb10e09c-cc94-4df8-ab2d-4863b159a0db.PNG">
+
+## Voltage Controlled Oscillator (VCO) Analog Block Implementation and Simulation
+### Voltage Controlled Oscillator IP (AVSD_VCO) Test Ckt
+<img width="531" alt="VCO_ckt" src="https://user-images.githubusercontent.com/88900482/194718214-fb8adf9e-31c0-4c01-8c7f-d11a407915bc.PNG">
+
+### Voltage Controlled Oscillator IP (AVSD_VCO) Test Ckt Waveforms
+<img width="949" alt="vco_0 9" src="https://user-images.githubusercontent.com/88900482/194718241-c35f9b4c-3161-4a8a-8fad-23568acc64d6.PNG">
+
+## Frequency Divide By 8 Digital Block Implementation and Simulation
+### Frequency Divide By 8 Ckt Diagram
+<img width="835" alt="divideby8-ckt" src="https://user-images.githubusercontent.com/88900482/194718381-978a0647-c634-4f0b-a09d-0c7e187ff6d7.PNG">
+
+### Frequency Divide By 8 Waveforms
+<img width="956" alt="divideby8-ns-op" src="https://user-images.githubusercontent.com/88900482/194718406-52106396-8501-46ab-9207-5269948882c4.PNG">
+
+## Final PLL Circuit Diagram and Waveforms
+### Final PLL Circuit Diagram
+<img width="687" alt="PLL-schma" src="https://user-images.githubusercontent.com/88900482/194718537-64a8af4f-ac88-4cb8-8a95-14d5af535beb.PNG">
+
+### Final PLL Circuit Waveforms
+<img width="959" alt="pll-end" src="https://user-images.githubusercontent.com/88900482/194718580-f6822079-97dc-4537-aac3-f0040ebd3da0.PNG">
