@@ -36,8 +36,14 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 <img width="742" alt="pfd-sch" src="https://user-images.githubusercontent.com/88900482/194702613-8df3aaa7-60a0-44ae-a362-a75e6aff29c5.PNG">
 
 ### PFD Waveform
+#### Case 1) Va Leading Vb (Only UP i.e QA pulses are generated)
+<img width="948" alt="PFD-UP" src="https://user-images.githubusercontent.com/88900482/194714465-bea84e40-8dea-430b-9035-9322be2d0f2e.PNG">
 
+#### Case 2) Vb Leading Va
+<img width="953" alt="PFD-Down" src="https://user-images.githubusercontent.com/88900482/194714959-8f0d768f-4bcf-48a9-be2a-ea5e20195099.PNG">
 
+#### Case 3) Va and Vb in Phase
+<img width="945" alt="PFD-mid" src="https://user-images.githubusercontent.com/88900482/194714971-97b2b4d9-be9f-4f58-b73e-49ea25ab5bc2.PNG">
 
 
 
