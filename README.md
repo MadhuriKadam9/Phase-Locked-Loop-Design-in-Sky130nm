@@ -1,5 +1,5 @@
 # Design of Charge Pump Phase Locked Loop in Sky130nm
-This repository presents the design of PLL with charge pump. 
+This repository presents the design of Phase Locked Loop with charge pump. It is the Project dine during Mixed Signal SoC design Marathon using eSim & SKY130 organised by FOSSEE IIT Bombay
 
 # Table Of Content <br/>
 * [Abstract](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#abstract-)<br/>
@@ -92,11 +92,15 @@ Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai 
 Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # Acknowledgements <br/>
-[1. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](https://esim.fossee.in/mixed-signal-design-marathon/)<br/>
-[2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
+[1. Prof. Kannan Moudgalya, PI, Mixed Signal Circuit Design and Simulation Marathon usign eSim](http://iitb.ac.in/)<br/>
+[2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)<br/>
 [3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
+[4. Google](https://www.google.co.in/)<br/>
+[3. Ministry of Electronics & Information Technology (MeitY) Chips to Startup (C2S)](https://www.c2s.gov.in/)<br/>
+[3. Spoken Tutorial](https://spoken-tutorial.org/)<br/>
 [4. Mr. Sumanto Kar,PS, FOSSEE IITB](https://fossee.in/)<br/>
-[5. Ms. A. Devipriya](https://github.com/Devipriya1921/vsdserializer_v1/)<br/>
+[5. Ms. Paras Gidd](https://github.com/parasgidd/avsdpll_3v3/)<br/>
+
 
 # References <br/>
 [1]  Sreedhar Vineel R. Kaipu, Kriti Vaish, Sneha Komatireddy, Akshat Sood, Manish Goswami, “Design of a Low Power Wide Range Phase Locked Loop using 180nm CMOS Technology  ,” IEEE Conference Proc., July 2016.
