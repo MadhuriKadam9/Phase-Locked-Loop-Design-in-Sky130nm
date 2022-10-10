@@ -1,5 +1,5 @@
 # Design of Charge Pump Phase Locked Loop in Sky130nm
-This repository presents the design of Phase Locked Loop with charge pump. It is the Project dine during Mixed Signal SoC design Marathon using eSim & SKY130 organised by FOSSEE IIT Bombay.
+This repository presents the design of Phase Locked Loop with charge pump. It is the Project done during Mixed Signal SoC design Marathon using eSim & SKY130 organised by FOSSEE IIT Bombay.
 
 # Table Of Content <br/>
 * [Abstract](https://github.com/MadhuriKadam9/Phase-Locked-Loop-Design-in-Sky130nm/blob/main/README.md#abstract-)<br/>
@@ -104,7 +104,7 @@ Mrs. Madhuri Kadam, ME in Electronics and Telecommunication Engineering, Mumbai 
 Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # Acknowledgements <br/>
-[1. Prof. Kannan Moudgalya, PI, Mixed Signal SoC design Marathon using eSim & SKY130](http://iitb.ac.in/)<br/>
+[1] Prof. Kannan Moudgalya, PI, Mixed Signal SoC design Marathon using eSim & SKY130 (http://iitb.ac.in/)<br/>
 [2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)<br/>
 [3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
 [4. Google](https://www.google.co.in/)<br/>
@@ -119,6 +119,6 @@ Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 [2]   Behzad Razavi, “Design of Analog CMOS Integrated circuits” Mc Graw Hil Education, 2ed edition.
 
-[3]   Paras Gidd, Git-hub Repo,“https://github.com/parasgidd/avsdpll_3v3
+[3]   Paras Gidd, Git-hub Repo,“https://github.com/parasgidd/avsdpll_3v3"
 
 [4]   Nalinkumar,Git-hub Repo, "https://github.com/Nalinkumar2002/avsdvco_1v8"
