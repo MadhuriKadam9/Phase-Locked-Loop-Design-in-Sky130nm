@@ -105,13 +105,13 @@ Assistant Professor, Shree L. R. Tiwari College of Engineering, Mira Rd
 
 # Acknowledgements <br/>
 [1] Prof. Kannan Moudgalya, PI, Mixed Signal SoC design Marathon using eSim & SKY130 (http://iitb.ac.in/)<br/>
-[2. Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.vlsisystemdesign.com/)<br/>
-[3. Mr. Steeve Hoover, Redwood EDA](https://makerchip.com/)<br/>
-[4. Google](https://www.google.co.in/)<br/>
-[3. Ministry of Electronics & Information Technology (MeitY) Chips to Startup (C2S)](https://www.c2s.gov.in/)<br/>
-[3. Spoken Tutorial](https://spoken-tutorial.org/)<br/>
-[4. Mr. Sumanto Kar,PS, FOSSEE IITB](https://fossee.in/)<br/>
-[5. Ms. Paras Gidd](https://github.com/parasgidd/avsdpll_3v3/)<br/>
+[2] Mr. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. (https://www.vlsisystemdesign.com/)<br/>
+[3] Mr. Steeve Hoover, Redwood EDA (https://makerchip.com/)<br/>
+[4] Google (https://www.google.co.in/)<br/>
+[5] Ministry of Electronics & Information Technology (MeitY) Chips to Startup (C2S)(https://www.c2s.gov.in/)<br/>
+[6] Spoken Tutorial (https://spoken-tutorial.org/)<br/>
+[7] Mr. Sumanto Kar,PS, FOSSEE IITB (https://fossee.in/)<br/>
+[8] Ms. Paras Gidd (https://github.com/parasgidd/avsdpll_3v3/)<br/>
 
 
 # References <br/>
