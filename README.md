@@ -46,10 +46,10 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 #### Case 1) Va Leading Vb (Only UP i.e QA pulses are generated)
 <img width="948" alt="PFD-UP" src="https://user-images.githubusercontent.com/88900482/194714465-bea84e40-8dea-430b-9035-9322be2d0f2e.PNG">
 
-#### Case 2) Vb Leading Va
+#### Case 2) Vb Leading Va (Only DOWN i.e QB pulses are generated)
 <img width="953" alt="PFD-Down" src="https://user-images.githubusercontent.com/88900482/194714959-8f0d768f-4bcf-48a9-be2a-ea5e20195099.PNG">
 
-#### Case 3) Va and Vb in Phase
+#### Case 3) Va and Vb in Phase (Both UP and Down are Zero except some glitches at transition)
 <img width="945" alt="PFD-mid" src="https://user-images.githubusercontent.com/88900482/194714971-97b2b4d9-be9f-4f58-b73e-49ea25ab5bc2.PNG">
 
 ## Charge Pump (CP) with Low Pass Filter (LPF) Analog Block Implementation and Simulation
@@ -93,6 +93,8 @@ PFD is Digital Block which is implemented using two D flip flops and one AND gat
 <img width="687" alt="PLL-schma" src="https://user-images.githubusercontent.com/88900482/194718537-64a8af4f-ac88-4cb8-8a95-14d5af535beb.PNG">
 
 ### Final PLL Circuit Waveforms
+Here the Input reference clock frequency applied is 225 MHz and VCO output frequency generated is 8 times Fin i.e. 1.8 GHz which is then divided by 8 using Frequency divider Network and fed back to 2nd input of Phase frequency Detector (PFD)
+
 <img width="959" alt="pll-end" src="https://user-images.githubusercontent.com/88900482/194718580-f6822079-97dc-4537-aac3-f0040ebd3da0.PNG">
 
 
